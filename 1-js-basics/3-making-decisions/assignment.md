@@ -1,25 +1,4 @@
 # Operators
-
-## Instructions
-
-Play around with operators. Here's a suggestion for a program you can implement:
-
-You have a set of students from two different grading systems.
-
-### First grading system
-
-One grading system is defined as grades being from 1-5 where 3 and above means you pass the course.
-
-### Second grading system
-
-The other grade system has the following grades `A, A-, B, B-, C, C-` where `A` is the top grade and `C` is the lowest passing grade.
-
-### The task
-
-Given the following array `allStudents` representing all students and their grades, construct a new array `studentsWhoPass` containing all students who pass.
-
-> TIP, use a for-loop and if...else and comparison operators:
-
 ```javascript
 let allStudents = [
   'A',
@@ -31,4 +10,20 @@ let allStudents = [
 ]
 
 let studentsWhoPass = [];
+for (let i = 0; i < allStudents.length; i++) {
+  let grade = allStudents[i];
+  if (typeof grade === "number") {
+    if (grade >= 3) {
+      studentsWhoPass.push(grade);
+    }
+  }
+
+  else if (typeof grade === "string") {
+    if (grade === "A" || grade === "A-" || grade === "B" || 
+        grade === "B-" || grade === "C" || grade === "C-") {
+      studentsWhoPass.push(grade);
+    }
+  }
+}
+console.log("Passing Students:", studentsWhoPass);
 ```
