@@ -1,5 +1,5 @@
-# Data Types Practice
-
-## Instructions
-
-Imagine you are building a shopping cart. Write some documentation on the data types that you would need to complete your shopping experience. How did you arrive at your choices?
+- Strings: To store text-based information such as product names, categories, and user details.
+- Numbers:To handle all quantities, prices, totals, and IDs.
+- Boolean:To represent true/false conditions in the cart.
+- Arrays:To store lists of related items, such as products in the cart.
+- Objects:To represent structured data like a single product, user, or order.
