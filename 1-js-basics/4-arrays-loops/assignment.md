@@ -1,7 +1,10 @@
 # Loop an Array
 
-## Instructions
+```
+for(let i=0;i≤20;i++){
+    if(i%3 == 0){
+    console.log(i);
+    }
+}
+```
 
-Create a program that lists every 3rd number between 1-20 and prints it to the console.
-
-> TIP: use a for-loop and modify the iteration-expression
